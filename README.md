@@ -15,6 +15,7 @@ Features:
 - Play again option
 
 **Folder:** 
-Screenshot:  ![Number Game Screenshot](screenshot/numberGameScreenShot.png)
+Screenshot: ![Number Game Screenshot](task1/screenshots/numberGameScreenShot.png)
+
 
 
