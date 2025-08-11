@@ -1,7 +1,7 @@
 # Task one - Number Game
 
 ## Description
-A simple Java console-based game where the computer picks a random number, and you have to guess it.
+A Java game where the computer picks a random number, and you have to guess it.
 
 ## Features
 1. Generate a random number within a specified range, such as 1 to 100.
