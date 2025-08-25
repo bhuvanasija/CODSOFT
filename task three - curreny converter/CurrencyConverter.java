@@ -9,7 +9,6 @@ public class CurrencyConverter extends JFrame {
     private JTextField amountField;
     private JLabel resultLabel;
 
-    // Exchange rates (Base: INR for this example)
     private final Map<String, Double> rates = new HashMap<>();
 
     public CurrencyConverter() {
@@ -19,7 +18,6 @@ public class CurrencyConverter extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(6, 2, 10, 10));
 
-        // Example rates (static). In real-world, fetch from API.
         rates.put("INR", 1.0);
         rates.put("USD", 0.012);
         rates.put("EUR", 0.011);
@@ -50,9 +48,9 @@ public class CurrencyConverter extends JFrame {
         add(fromCurrency);
         add(toLabel);
         add(toCurrency);
-        add(new JLabel()); // Empty placeholder
+        add(new JLabel()); 
         add(convertButton);
-        add(new JLabel()); // Empty placeholder
+        add(new JLabel()); 
         add(resultLabel);
     }
 
@@ -63,8 +61,8 @@ public class CurrencyConverter extends JFrame {
             String to = (String) toCurrency.getSelectedItem();
 
             if (from != null && to != null) {
-                double inrAmount = amount / rates.get(from);  // Convert to base INR
-                double converted = inrAmount * rates.get(to); // Convert to target
+                double inrAmount = amount / rates.get(from); 
+                double converted = inrAmount * rates.get(to); 
 
                 resultLabel.setText("Converted Amount: " + String.format("%.2f", converted) + " " + to);
             }
@@ -79,3 +77,4 @@ public class CurrencyConverter extends JFrame {
         });
     }
 }
+
